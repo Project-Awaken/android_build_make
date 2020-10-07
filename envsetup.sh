@@ -895,6 +895,10 @@ function lunch()
     if [[ -n "${CHECK_MU_CONFIG:-}" ]]; then
       check_mu_config
     fi
+
+    echo "";
+    cat $(gettop)/build/make/awaken_ascii_logo;
+    echo"";
 }
 
 unset COMMON_LUNCH_CHOICES_CACHE
