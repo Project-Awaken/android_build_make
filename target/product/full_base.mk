@@ -44,11 +44,6 @@ PRODUCT_VENDOR_PROPERTIES := \
 # Put en_US first in the list, so make it default.
 PRODUCT_LOCALES := en_US
 
-# Get some sounds
-ifeq ($(AWAKEN_BUILD),)
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
-endif
-
 # Get a list of languages.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
